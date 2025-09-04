@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mohammad Mulla Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #000000;
+            background-size: cover;
+            color: #ffffff;
+            filter: (100%);
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 180px;
+            background: #2e3047;
+            border-radius: 10px;
+            height: 100%;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            box-shadow:  0 2px 8px rgba(0,0,0,0.5);
+            align-items: center;
+            padding-top: 40px;
+            z-index: 2;
+            margin-top: 30px;
+            margin-left: 50px;
+            
+        }
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #fff;
+            display: block;
+            margin: 0 auto 24px auto;
+            border: 4px solid #000000;
+        }
+        .sidebar nav {
+            width: 100%;
+        }
+        .sidebar nav a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 0;
+            text-align: center;
+            font-size: 1.1em;
+            transition: background 0.2s;
+        }
+        .sidebar nav a:hover {
+            background: #000000;
+        }
+        .container {
+            margin-left: 260px;
+            max-width: 900px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #2e3047;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            margin-top: 30px;
+        }
+        header {
+        
+            color: #000000;
+            text-align: center;
+            background: #fff;
+            padding: 0;
+            border-radius: 10px;
+        }
+        .about a { color: #13aac5; text-decoration: none; background-color: #000000; }
+       
+        h1, h2 { margin-top: 0; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .project a { display: inline; color: #ffffff; text-decoration: none; }
+        .project a:hover { background: #2e3047; text-decoration: underline; }
+        .project { background: #000000; padding: 15px; border-radius: 6px; color: #fff; }
+        .resume-btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .resume-btn:hover {
+            background: #13aac5;
+        }
+        .contact a { color: #ffffff; text-decoration: none; }
+        .contact a:hover { background: #000000; text-decoration: underline; }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #000000;
+            color: #fff;
+            margin-top: 40px;
+            margin-left: 200px;
+        }
+        @media (max-width: 700px) {
+            .sidebar { width: 100%; height: auto; position: static; flex-direction: row; padding-top: 10px; }
+            .sidebar img { margin-bottom: 0; margin-right: 20px; }
+            .container, footer { margin-right: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="D:\vs code\pic.jpg" alt="Mohammad Mulla smiling in a professional headshot, wearing a collared shirt against a neutral background, conveying a friendly and approachable mood">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#resume">Resume</a>
+            <a href="about.html">About Myself</a>
+        </nav>
+    </div>
+    <div class="container" id="home">
+        <header>
+            <h1> Mohammad Mulla </h1>
+            <h3>Web Developer  |  Designer  |  Programmer</h3>
+        </header>
+        <section id="about">
+            <h2><br>Introduction</h2>
+            <p>
+               Hi, I’m Mohammad Hasan Mulla, a passionate Computer Science graduate with strong interest in Full-Stack Development, Cloud Computing, and Embedded Systems. I enjoy building practical, real-world solutions—from designing hardware prototypes to developing scalable web applications.
+
+Over the course of my academic and project work. <br> I have:
+
+Built a Crime Reporting System to improve community safety.
+
+Developed a Smart Rain Drop Sensor for protecting electrical pillars from short circuits and fire hazards.
+
+Created a job-matching platform for workers and mistris to reduce traffic congestion and connect them directly with opportunities. <br>
+
+
+I’m currently enhancing my skills in Python, PHP, MySQL, JavaScript, and AWS, while exploring modern DevOps practices. My focus is on delivering reliable and user-friendly applications, with clean code and thoughtful design.<br><br>
+
+<h3>Career Goal:</h3> To grow as a Full-Stack Developer / Cloud Engineer, contributing to impactful projects that make technology more accessible and beneficial to everyday life.<br>
+
+<h3>Interests:</h3> Full-Stack Web Development | Cloud Computing | IoT & Embedded Systems | Research in Environmental Tech <br><br>
+            </p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Embedded System</h3>
+                    <p>Smart Rain Drop Sensor</p>
+                    <a href="D:\vs code\project.html">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Website</h3>
+                    <p>Website For Co-Workers</p>
+                    <a href="D:\vs code\project2.html">View Project</a> <br><br>
+                </div>
+                <!-- Add more projects as needed -->
+                 <br><br>
+            </div>
+        </section>
+        <section id="resume">
+            <h2><br>Resume</h2>
+            <a class="resume-btn" href="ResumeORG.pdf" download>Download My Resume</a>
+        </section>
+        <section id="contact">
+            <div class="contact">
+            <h2><br>Contact</h2>
+            <p>Email: <a href="mailto:md.mohmmadd@gmail.com">md.mohmmadd@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-mulla-973852263">https://www.linkedin.com/in/mohammad-mulla-973852263</a></p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Mohammad Mulla. All rights reserved.
+    </footer>
+</body>
+</html>
