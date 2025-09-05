@@ -53,6 +53,24 @@
 		.contact h3 {
 			margin-top: 0;
 		}
+
+		.contact {
+			display: flex;
+			gap: 15px;
+			justify-content: center;
+			margin-top: 20px;
+		}
+		.contact-icon {
+			width: 40px;
+			height: auto;
+			max-width: 100%;
+			transition: transform 0.3s;
+		}
+		.contact-icon:hover {
+			transform: scale(1.1);
+		}
+
+
 	</style>
 </head>
 <body>
@@ -77,9 +95,15 @@ I aim to grow as a solution-oriented IT professional, contributing to real-world
 		</p>
 		<div class="contact">
 			<h3>Contact Information</h3>
-			<p>Email: <a href="mailto:md.mohmmadd@gmail.com">md.mohmmadd@gmail.com</a></p>
-			<p>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-mulla-973852263">https://www.linkedin.com/in/mohammad-mulla-973852263</a></p>
-			<p>Instagram: <a href="https://www.instagram.com/mohmmadd___?igsh=cWlscGJ2dG13YzM0"> Instagram Profile </a> </p>
+			<a href="mailto:md.mohmmadd@gmail.com" target="_blank">
+				<img src="gmail.jpg" alt="Gmail" class="contact-icon">
+			</a>
+			<a href="https://www.linkedin.com/in/mohammad-mulla-973852263" target="_blank">
+				<img src="linked-in.jpg" alt="LinkedIn" class="contact-icon">
+			</a>
+			<a href="https://www.instagram.com/mohmmadd___?igsh=cWlscGJ2dG13YzM0"> 
+				<img src="insta_logo.png" alt="Instagram" class="contact-icon">
+			</a>
 		</div>
 		<a class="back-link" href="index.html">&#8592; Back to Portfolio</a>
 	</div>
