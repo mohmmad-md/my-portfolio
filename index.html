@@ -104,6 +104,23 @@
             margin-top: 40px;
             margin-left: 200px;
         }
+
+        .my-name {
+      font-size: 3rem;
+      opacity: 0;
+      animation: slideFade 2s forwards;
+    }
+
+    @keyframes slideFade {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
         @media (max-width: 700px) {
             .sidebar { width: 100%; height: auto; position: static; flex-direction: column; padding: 20px 0; margin: 0; border-radius: 0; }
             .sidebar img { margin: 0 auto 10px auto; }
@@ -123,7 +140,7 @@
     </div>
     <div class="container" id="home">
         <header>
-            <h1> Mohammad Mulla </h1>
+            <h1 class="my-name" Mohammad Mulla </h1>
             <h3>Web Developer  |  Designer  |  Programmer</h3>
         </header>
         <section id="about">
