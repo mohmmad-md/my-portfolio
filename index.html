@@ -93,8 +93,31 @@
         .resume-btn:hover {
             background: #13aac5;
         }
-        .contact a { color: #ffffff; text-decoration: none; }
-        .contact a:hover { background: #000000; text-decoration: underline; }
+
+        .contact {
+			margin-top: 30px;
+			background: #222;
+			padding: 20px;
+			border-radius: 6px;
+		}
+
+		.contact {
+			display: flex;
+			gap: 15px;
+			justify-content: center;
+			margin-top: 20px;
+		}
+		.contact-icon {
+			width: 40px;
+			height: auto;
+			max-width: 100%;
+			transition: transform 0.3s;
+		}
+		.contact-icon:hover {
+			transform: scale(1.1);
+		}
+
+
         
         footer {
             text-align: center;
@@ -190,9 +213,15 @@ I’m currently enhancing my skills in Python, PHP, MySQL, JavaScript, and AWS, 
         </section>
         <section id="contact">
             <div class="contact">
-            <h2><br>Contact</h2>
-            <p>Email: <a href="mailto:md.mohmmadd@gmail.com">md.mohmmadd@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-mulla-973852263">https://www.linkedin.com/in/mohammad-mulla-973852263</a></p>
+            <a href="mailto:md.mohmmadd@gmail.com">
+                <img src="gmail.jpg" alt="Gmail" class="contact-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/mohammad-mulla-973852263">
+                <img src="linked-in.jpg" alt="LinkedIn" class="contact-icon">
+            </a>
+            <a href="https://www.instagram.com/mohmmadd___?igsh=cWlscGJ2dG13YzM0">
+                <img src="insta_logo.png" alt="Instagram" class="contact-icon">
+            </a>
             </div>
         </section>
     </div>
