@@ -21,6 +21,8 @@
 			background: #2e3047;
 			padding: 40px;
 			border-radius: 8px;
+			line-height: 1.6;
+			letter-spacing: 0.5px; 
 			box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 		}
 		h1, h2 { margin-top: 0; }
@@ -34,7 +36,7 @@
 		.back-link {
 			display: inline-block;
 			margin-top: 30px;
-			background: #222;
+			background: #000000;
 			color: #fff;
 			padding: 10px 20px;
 			border-radius: 5px;
@@ -42,7 +44,7 @@
 			transition: background 0.2s;
 		}
 		.back-link:hover {
-			background: #13aac5;
+			background: #5fd382;
 		}
 		.contact {
 			margin-top: 30px;
@@ -76,19 +78,77 @@
 			transform: scale(1.1);
 		}
 
+		strong
+		 {
+		  color: #dbdee3;           /* Accent color */
+		  font-weight: 700;          /* Bold */
+		  background-color: rgba(138,180,255,0.1); /* subtle highlight */
+		  padding: 2px 4px;          /* small padding around text */
+  		border-radius: 4px;        /* rounded highlight edges */
+		}
+
+.tagline {
+  font-style: bold;
+  color: #000000;
+  margin-bottom: 20px;
+  background: #5ecef1; ;
+}
+
+.about-text {
+  margin-bottom: 25px;     /* ↑ More space between paragraphs */
+  font-size: 15px;
+}
+
+.send-message {
+  display: inline-block;
+  margin-top: 20px;          /* space from contact details */
+  padding: 10px 20px;
+  background-color: #ecececde; /* accent color */
+  color: #000000;               /* text color */
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.send-message:hover {
+  background-color: #5fd382; /* slightly darker on hover */
+}
+
 
 	</style>
 </head>
 <body>
 	<div class="container">
 		<h1>About Myself</h1>
-		<p>
-			<h3>Mohammad Hasan Mulla</h3>
-I am a passionate Computer Science student with hands-on experience in full-stack development, cloud computing, and problem-solving. I enjoy building impactful projects, from web applications like a Crime Reporting System and a job-finder platform for workers, to embedded solutions like a Smart Rain Drop Sensor for electrical safety.
+		<p class="tagline">
+      💻 Computer Science Graduate | Web Developer | National Baseball Player ⚾
+    </p>
 
-Currently preparing for roles in IT with companies like TCS Smart Hiring and Wipro WILP, I am also pursuing advanced knowledge in MCA and exploring research on lake water quality using phytoplankton indicators.
+    <!-- <h2>Introduction</h2> -->
+	<p class="about-text">
+      I am <strong>Mohammad Hasan Mulla</strong> from <strong>Latur, Maharashtra</strong>, 
+      and a graduate of <strong>Rajarshi Shahu College, Latur</strong>, where I earned my degree 
+      in <strong>Computer Science</strong>.<br> My academic journey was filled with opportunities 
+      to explore different areas of technology, from <strong>web development and databases</strong> 
+      to <strong>embedded systems and cloud fundamentals</strong>. <br>Through projects like a 
+      <strong>Smart Rain Drop Sensor for electrical safety</strong>, a <strong>Crime Reporting System</strong>, 
+      and a <strong>Job Finder Website for workers</strong>, I not only improved my coding and problem-solving skills 
+      but also learned how technology can bring practical solutions to society.<br><br>
 
-<br>
+    
+      Apart from academics, I have always been passionate about <strong>sports</strong>. I proudly 
+      represented my college as a <strong>national-level baseball player</strong> at the 
+      <strong>2022 Nationals held in Kerala</strong>.<br> At the <strong>college level</strong>, our baseball 
+      team consistently achieved the <strong>Gold Medal</strong>, which remains one of the highlights 
+      of my sports journey.<br> Being part of these events taught me invaluable lessons in 
+      <strong>teamwork, discipline, resilience, and leadership</strong> — qualities that I now carry into my professional life.
+      I strongly believe in balancing <strong>technical knowledge</strong> with the 
+      <strong>spirit of sportsmanship</strong>.<br> My long-term goal is to grow as an IT professional, 
+      contribute to impactful projects, and continuously evolve by learning modern technologies 
+      such as <strong>cloud computing, AI, and full-stack development</strong>. I aspire to build 
+      solutions that not only enhance businesses but also <strong>solve real-world problems</strong>.
+    </p> <br><br>
 <h4>My interests include: </h4>
 
 💻 Full-stack development (PHP, Python, MySQL, HTML/CSS/JS) <br>
@@ -99,6 +159,8 @@ Currently preparing for roles in IT with companies like TCS Smart Hiring and Wip
 <br><br>
 I aim to grow as a solution-oriented IT professional, contributing to real-world problems with innovation and technology.
 		</p>
+		<h2>Contact Me</h2>
+		<p>If you'd like to get in touch, feel free to reach out via email or social media:</p>
 		<div class="contact">
 			<a href="mailto:md.mohmmadd@gmail.com" target="_blank">
 				<img src="gmail.png" alt="Gmail" class="contact-icon">
@@ -110,6 +172,7 @@ I aim to grow as a solution-oriented IT professional, contributing to real-world
 				<img src="insta.png" alt="Instagram" class="contact-icon">
 			</a>
 		</div>
+		<a href="sms:+917709771450" class="send-message">📩 Send Message</a>
 		<a class="back-link" href="index.html">&#8592; Back to Portfolio</a>
 	</div>
 </body>
