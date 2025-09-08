@@ -102,11 +102,11 @@
   letter-spacing: 0.3px;
 }
 
-.skill-list{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+        .skill-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
 
 .skill-list li{
   position: relative;
@@ -114,22 +114,22 @@
   color: var(--text);
 }
 
-.skill-list li::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 14px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 3px #868dde; /* soft glow ring */
-}
+        .skill-list li::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 14px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 3px #868dde; /* soft glow ring */
+        }
 
-.skill-list span{
-  font-weight: 600;
-  color: #e8ebff;            /* slightly brighter for labels */
-}
+        .skill-list span{
+        font-weight: 600;
+        color: #e8ebff;            /* slightly brighter for labels */
+        }
 
 /* Optional: two columns on wider screens */
 @media (min-width: 700px){
@@ -221,9 +221,16 @@
         transform: translateX(0);
       }
     }
-
-
-
+    body {
+     opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    }
+    body.fade-in {
+    opacity: 1;
+    }
+    body.fade-out {
+      opacity: 0;
+    }
 
 
     html {
@@ -234,8 +241,34 @@
     </style>
 </head>
 <body>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  // fade in when page loads
+    requestAnimationFrame(() => {
+    document.body.classList.add("fade-in");
+  });
+});
+
+    document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", e => {
+    let href = link.getAttribute("href");
+    if (href && !href.startsWith("#")) { // avoid anchor links
+      e.preventDefault();
+
+      document.body.classList.remove("fade-in");
+      document.body.classList.add("fade-out");
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 600); // must match transition time
+    }
+  });
+});
+
+</script>
     <div class="sidebar">
-        <img src="picture.jpg" alt="MD">
+        <img src="profile.jpg" alt="MD">
         <nav>
             <a href="#home"><i class="fas fa-home"></i>Home</a>
             <a href="#projects"><i class="fas fa-code"></i> Projects</a>
@@ -272,7 +305,7 @@ I’m currently enhancing my skills in Python, PHP, MySQL, JavaScript, and AWS, 
 <h3>Interests:</h3> Full-Stack Web Development | Cloud Computing | IoT & Embedded Systems | Research in Environmental Tech <br><br>
             </p>
         </section>
-        <section>
+        <section id="projects">
             <h2>Projects</h2>
             <div class="projects">
                 <div class="project">
@@ -308,6 +341,7 @@ I’m currently enhancing my skills in Python, PHP, MySQL, JavaScript, and AWS, 
             <h2><br>Resume</h2>
             <a class="resume-btn" href="ResumeORG.pdf" download>Download My Resume</a>
         </section>
+        <h3>Contact</h3>
         <section id="contact">
             <div class="contact">
             <a href="mailto:md.mohmmadd@gmail.com">
