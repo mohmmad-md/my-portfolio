@@ -177,6 +177,13 @@
   		scroll-behavior: smooth;  /* Smooth scrolling for anchor links */	
 		}
 
+		 @media (max-width: 700px) {
+            .sidebar { width: 100%; height: auto; position: static; flex-direction: column; padding: 20px 0; margin: 0; border-radius: 0; }
+            .sidebar img { margin: 0 auto 10px auto; }
+            .container { margin: 20px; margin-left: 0; }
+            footer { margin-left: 0; }
+        }
+
 
 	</style>
 </head>
@@ -211,9 +218,10 @@
  <div class="sidebar">
         <img src="profile.jpg" alt="MD">
         <nav>
-            <a href="/workspaces/my-portfolio/index.html"><i class="fas fa-home"></i>Home</a>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
             <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
 			<a href="sms:+917709771450" class="send-message">📩 Send Message</a>
+			<a href="md.mohmmadd@gmail.com" class="send-message">📧 Email Me</a>
            
            
         </nav>
